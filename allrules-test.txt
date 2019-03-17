@@ -1,0 +1,1 @@
+alert tcp any 23 -> any any (msg:"telnet root login success";. content:"login"; pcre:"/root@.*#/"; nocase; sid:1000001;)
